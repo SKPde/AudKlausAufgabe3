@@ -11,12 +11,12 @@ public class RundenZeiten {
         System.out.print("Fahrer: ");
         a.fahrer = in.nextLine();
         System.out.print("\nSchnellste Rundenzeit: ");
-        a.zeit = in.nextInt();
-        //list.enter (a);
+        a.zeit = in.nextDouble();
+        list.enter (a);
         System.out.print("\nNoch ein Fahrer? (j/n): ");
         eingabe = in.nextLine();
         //weiter = eingabe.charAt(0);
       } while ('j' == in.nextLine().charAt(0));
       System.out.println("Die sortierte Rundenzeiten-Liste:");
-      //list.print();
+      list.print();
 } }
