@@ -7,6 +7,10 @@ public class AutoListe {
 		if (kopf == null) {
 			kopf = neu;
 			return;
+		} else if (neu.zeit < kopf.zeit) {
+			neu.naechstes = kopf;
+			kopf = neu;
+			return;
 		}
 		Auto temp = kopf;
 		while (temp != null) {
